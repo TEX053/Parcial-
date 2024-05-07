@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  mysqldb:
+    container_name: mysqldbCRUD
+    image: mysql
+    ports:
+      - 8090:3306
+    environment:
+      MYSQL_USER: usuario
+      MYSQL_PASSWORD: contrasena
+      MYSQL_DATABASE: cruddb
+      MYSQL_ROOT_PASSWORD: root
